@@ -3666,6 +3666,7 @@ button,
   padding-bottom: 15px;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 42px 42px 0 0;
+  cursor: pointer;
 }
 
 .tabs__nav-item:before {
