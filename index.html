@@ -216,9 +216,9 @@
       <section class="promo">
         <div class="promo__pic">
           <picture>
-            <source srcset="img/promo.avif, img/promo@2x.avif 2x" type="image/avif" />
-            <source srcset="img/promo.webp, img/promo@2x.webp 2x" type="image/webp" />
-            <img src="img/promo.jpg" srcset="img/promo@2x.jpg 2x" alt="" />
+            <source data-srcset="img/promo.avif, img/promo@2x.avif 2x" type="image/avif" />
+            <source data-srcset="img/promo.webp, img/promo@2x.webp 2x" type="image/webp" />
+            <img class="lazyload" data-src="img/promo.jpg" data-srcset="img/promo@2x.jpg 2x" alt="" />
           </picture>
         </div>
         <div class="container">
@@ -228,50 +228,60 @@
         </div>
       </section>
       <section class="products">
-        <div data-tabs data-tabs-animate class="products__tabs  tabs">
+        <div data-tabs class="products__tabs  tabs">
           <div class="container" id="flavor">
             <div class="tabs-nav-inner" data-simplebar data-simplebar-auto-hide="false">
               <nav data-tabs-titles class="tabs__navigation">
-                <button type="button" class="tabs__title _tab-active">
-                  <div class="tabs__icon">
-                    <svg class="icon">
-                      <use xlink:href="#icon-parfum"></use>
-                    </svg>
+                <div class="tabs__nav-item _tab-active">
+                  <div class="tabs__nav-item-btn">
+                    <div class="tabs__icon">
+                      <svg class="icon">
+                        <use xlink:href="#icon-parfum"></use>
+                      </svg>
+                    </div>
+                    <span>Линейка Автопарфюм</span>
                   </div>
-                  <span>Линейка Автопарфюм</span>
-                </button>
-                <button type="button" class="tabs__title">
-                  <div class="tabs__icon">
-                    <svg class="icon">
-                      <use xlink:href="#icon-fruits"></use>
-                    </svg>
+                </div>
+                <div class="tabs__nav-item">
+                  <div class="tabs__nav-item-btn">
+                    <div class="tabs__icon">
+                      <svg class="icon">
+                        <use xlink:href="#icon-fruits"></use>
+                      </svg>
+                    </div>
+                    <span>Фруктовая серия</span>
                   </div>
-                  <span>Фруктовая серия</span>
-                </button>
-                <button type="button" class="tabs__title">
-                  <div class="tabs__icon">
-                    <svg class="icon">
-                      <use xlink:href="#icon-tree"></use>
-                    </svg>
+                </div>
+                <div class="tabs__nav-item">
+                  <div class="tabs__nav-item-btn">
+                    <div class="tabs__icon">
+                      <svg class="icon">
+                        <use xlink:href="#icon-tree"></use>
+                      </svg>
+                    </div>
+                    <span>Картонные ароматизаторы</span>
                   </div>
-                  <span>Картонные ароматизаторы</span>
-                </button>
-                <button type="button" class="tabs__title">
-                  <div class="tabs__icon">
-                    <svg class="icon">
-                      <use xlink:href="#icon-male"></use>
-                    </svg>
+                </div>
+                <div class="tabs__nav-item">
+                  <div class="tabs__nav-item-btn">
+                    <div class="tabs__icon">
+                      <svg class="icon">
+                        <use xlink:href="#icon-male"></use>
+                      </svg>
+                    </div>
+                    <span>Мужская линейка</span>
                   </div>
-                  <span>Мужская линейка</span>
-                </button>
-                <button type="button" class="tabs__title">
-                  <div class="tabs__icon">
-                    <svg class="icon">
-                      <use xlink:href="#icon-female"></use>
-                    </svg>
+                </div>
+                <div class="tabs__nav-item">
+                  <div class="tabs__nav-item-btn">
+                    <div class="tabs__icon">
+                      <svg class="icon">
+                        <use xlink:href="#icon-female"></use>
+                      </svg>
+                    </div>
+                    <span>Женская линейка</span>
                   </div>
-                  <span>Женская линейка</span>
-                </button>
+                </div>
               </nav>
             </div>
           </div>
@@ -285,9 +295,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -300,9 +310,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
-                              <img src="img/product2.jpg" srcset="img/product2@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product2.jpg" data-srcset="img/product2@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -315,9 +325,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -353,9 +363,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -368,9 +378,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
-                              <img src="img/product2.jpg" srcset="img/product2@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product2.jpg" data-srcset="img/product2@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -383,9 +393,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -421,9 +431,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -436,9 +446,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
-                              <img src="img/product2.jpg" srcset="img/product2@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product2.jpg" data-srcset="img/product2@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -451,9 +461,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -489,9 +499,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -504,9 +514,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
-                              <img src="img/product2.jpg" srcset="img/product2@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product2.jpg" data-srcset="img/product2@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -519,9 +529,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -557,9 +567,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -572,9 +582,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
-                              <img src="img/product2.jpg" srcset="img/product2@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product2.avif, img/product2@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product2.webp, img/product2@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product2.jpg" data-srcset="img/product2@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -587,9 +597,9 @@
                         <div class="product-line__slide swiper-slide">
                           <div class="product-line__pic">
                             <picture>
-                              <source srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
-                              <source srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
-                              <img src="img/product1.jpg" srcset="img/product1@2x.jpg 2x" alt="" />
+                              <source data-srcset="img/product1.avif, img/product1@2x.avif 2x" type="image/avif" />
+                              <source data-srcset="img/product1.webp, img/product1@2x.webp 2x" type="image/webp" />
+                              <img class="lazyload" data-src="img/product1.jpg" data-srcset="img/product1@2x.jpg 2x" width="339" height="263" alt="" />
                             </picture>
                           </div>
                           <h3 class="product-line__title">Название № 1</h3>
@@ -628,7 +638,7 @@
           <picture>
             <source data-srcset="img/guarantee.avif, img/guarantee@2x.avif 2x" type="image/avif" />
             <source data-srcset="img/guarantee.webp, img/guarantee@2x.webp 2x" type="image/webp" />
-            <img class="lazyload" src="img/placeholder.png" data-src="img/guarantee.jpg" srcset="img/placeholder.png" data-srcset="img/guarantee@2x.jpg 2x" alt="" />
+            <img class="lazyload" data-src="img/guarantee.jpg" data-srcset="img/guarantee@2x.jpg 2x" alt="" />
           </picture>
         </div>
         <div class="container">
@@ -728,12 +738,12 @@
           <picture>
             <source data-srcset="img/about.avif, img/about@2x.avif 2x" type="image/avif" />
             <source data-srcset="img/about.webp, img/about@2x.webp 2x" type="image/webp" />
-            <img class="lazyload" src="img/placeholder.png" data-src="img/about.jpg" srcset="img/placeholder.png" data-srcset="img/about@2x.jpg 2x" alt="" />
+            <img class="lazyload" data-src="img/about.jpg" data-srcset="img/about@2x.jpg 2x" alt="" />
           </picture>
         </div>
         <div class="container">
           <div class="features__info">
-            <h2 class="features__title">Почему<br>выбирают нас</h2>
+            <h2 class="features__title">Почему выбирают нас</h2>
             <ol class="features__list">
               <li class="features__item">
                 Стойкие ароматы
@@ -755,21 +765,21 @@
               <picture>
                 <source data-srcset="img/choose-prod1.avif, img/choose-prod1@2x.avif 2x" type="image/avif" />
                 <source data-srcset="img/choose-prod1.webp, img/choose-prod1@2x.webp 2x" type="image/webp" />
-                <img class="lazyload" src="img/placeholder.png" data-src="img/choose-prod1.jpg" srcset="img/placeholder.png" data-srcset="img/choose-prod1@2x.jpg 2x" alt="" />
+                <img class="lazyload" data-src="img/choose-prod1.jpg" data-srcset="img/choose-prod1@2x.jpg 2x" alt="" />
               </picture>
             </div>
             <div class="features__img">
               <picture>
                 <source data-srcset="img/choose-prod2.avif, img/choose-prod2@2x.avif 2x" type="image/avif" />
                 <source data-srcset="img/choose-prod2.webp, img/choose-prod2@2x.webp 2x" type="image/webp" />
-                <img class="lazyload" src="img/placeholder.png" data-src="img/choose-prod2.jpg" srcset="img/placeholder.png" data-srcset="img/choose-prod2@2x.jpg 2x" alt="" />
+                <img class="lazyload" data-src="img/choose-prod2.jpg" data-srcset="img/choose-prod2@2x.jpg 2x" alt="" />
               </picture>
             </div>
             <div class="features__img">
               <picture>
                 <source data-srcset="img/choose-prod3.avif, img/choose-prod3@2x.avif 2x" type="image/avif" />
                 <source data-srcset="img/choose-prod3.webp, img/choose-prod3@2x.webp 2x" type="image/webp" />
-                <img class="lazyload" src="img/placeholder.png" data-src="img/choose-prod3.jpg" srcset="img/placeholder.png" data-srcset="img/choose-prod3@2x.jpg 2x" alt="" />
+                <img class="lazyload" data-src="img/choose-prod3.jpg" data-srcset="img/choose-prod3@2x.jpg 2x" alt="" />
               </picture>
             </div>
           </div>
@@ -786,7 +796,7 @@
                     <picture>
                       <source data-srcset="img/client-pic.avif, img/client-pic@2x.avif 2x" type="image/avif" />
                       <source data-srcset="img/client-pic.webp, img/client-pic@2x.webp 2x" type="image/webp" />
-                      <img class="lazyload" src="img/placeholder.png" data-src="img/client-pic.jpg" srcset="img/placeholder.png" data-srcset="img/client-pic@2x.jpg 2x" alt="" />
+                      <img class="lazyload" data-src="img/client-pic.jpg" data-srcset="img/client-pic@2x.jpg 2x" alt="" />
                     </picture>
                   </div>
                   <div class="slider-reviews__info">
@@ -800,7 +810,7 @@
                     <picture>
                       <source data-srcset="img/client-pic.avif, img/client-pic@2x.avif 2x" type="image/avif" />
                       <source data-srcset="img/client-pic.webp, img/client-pic@2x.webp 2x" type="image/webp" />
-                      <img class="lazyload" src="img/placeholder.png" data-src="img/client-pic.jpg" srcset="img/placeholder.png" data-srcset="img/client-pic@2x.jpg 2x" alt="" />
+                      <img class="lazyload" data-src="img/client-pic.jpg" data-srcset="img/client-pic@2x.jpg 2x" alt="" />
                     </picture>
                   </div>
                   <div class="slider-reviews__info">
@@ -814,7 +824,7 @@
                     <picture>
                       <source data-srcset="img/client-pic.avif, img/client-pic@2x.avif 2x" type="image/avif" />
                       <source data-srcset="img/client-pic.webp, img/client-pic@2x.webp 2x" type="image/webp" />
-                      <img class="lazyload" src="img/placeholder.png" data-src="img/client-pic.jpg" srcset="img/placeholder.png" data-srcset="img/client-pic@2x.jpg 2x" alt="" />
+                      <img class="lazyload" data-src="img/client-pic.jpg" data-srcset="img/client-pic@2x.jpg 2x" alt="" />
                     </picture>
                   </div>
                   <div class="slider-reviews__info">
@@ -982,7 +992,11 @@
             <h3 class="colaboration__title">Отправьте заявку о сотрудничестве</h3>
             <div class="colaboration__content">
               <div class="colaboration__pic">
-                <img src="img/colab.jpg" alt="">
+                <picture>
+                  <source data-srcset="img/colab.avif, img/colab@2x.avif 2x" type="image/avif" />
+                  <source data-srcset="img/colab.webp, img/colab@2x.webp 2x" type="image/webp" />
+                  <img class="lazyload" data-src="img/colab.jpg" data-srcset="img/colab@2x.jpg 2x" alt="" />
+                </picture>
               </div>
               <form class="form-colaboration" action="/" method="post">
                 <div class="form-group">
